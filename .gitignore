@@ -1,0 +1,10 @@
+# Editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Assets gerados
+*.log
