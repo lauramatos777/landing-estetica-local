@@ -125,6 +125,22 @@ a {
   padding-top: 56px;
 }
 
+.hero__grid {
+  position: relative;
+}
+
+.hero__grid::before {
+  content: "";
+  position: absolute;
+  inset: -18px auto auto -18px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 107, 0.14), transparent 68%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
 .hero__grid,
 .split,
 .cta__box {
@@ -274,6 +290,17 @@ a {
   position: relative;
 }
 
+.hero__card::after {
+  content: "";
+  position: absolute;
+  inset: 20px -10px -10px 20px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(-2deg);
+}
+
 .hero__badge {
   position: absolute;
   top: -16px;
@@ -290,6 +317,18 @@ a {
 
 .schedule-card {
   padding: 30px;
+}
+
+.schedule-card::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 22px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(15, 76, 92, 0.14), rgba(255, 255, 255, 0.7)),
+    radial-gradient(circle at 30% 30%, rgba(255, 107, 107, 0.34), transparent 50%);
 }
 
 .schedule-card p {
@@ -471,6 +510,15 @@ a {
   .testimonials-grid,
   .hero__stats {
     grid-template-columns: 1fr;
+  }
+
+  .hero__grid::before,
+  .hero__card::after {
+    display: none;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
   }
 
   .hero__content h1 {
