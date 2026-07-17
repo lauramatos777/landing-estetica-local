@@ -230,6 +230,13 @@ a {
     background-color 180ms ease;
 }
 
+/* Accessibility: clear focus states */
+.button:focus,
+a:focus {
+  outline: 3px solid rgba(15, 76, 92, 0.12);
+  outline-offset: 3px;
+}
+
 .button:hover {
   transform: translateY(-2px);
 }
@@ -668,7 +675,8 @@ a {
 .cta__form {
   display: grid;
   gap: 12px;
-  min-width: 280px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .cta__form input,
@@ -682,6 +690,12 @@ a {
 }
 
 .cta__form textarea { resize: vertical; }
+
+/* make form controls expand on small widths */
+.cta__form input,
+.cta__form textarea {
+  width: 100%;
+}
 
 .cta__small {
   margin: 6px 0 0;
@@ -766,6 +780,59 @@ a {
   gap: 12px;
   color: rgba(31, 41, 51, 0.62);
   font-size: 0.92rem;
+}
+
+/* Small screen touch targets and spacing */
+@media (max-width: 480px) {
+  :root {
+    --radius-lg: 18px;
+    --radius-md: 12px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .topbar__inner {
+    min-height: 64px;
+    padding: 8px 0;
+  }
+
+  .brand__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero__content h1 {
+    font-size: clamp(2.4rem, 12vw, 3.6rem);
+  }
+
+  .button {
+    font-size: 0.95rem;
+    min-height: 48px;
+    padding: 0 16px;
+  }
+
+  .cards-grid,
+  .testimonials-grid {
+    gap: 14px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+  /* notebook adjustments: slightly tighter grid for better balance */
+  .container { width: min(1000px, calc(100% - 40px)); }
+  .section { padding: 72px 0; }
+  .hero__grid { grid-template-columns: 1fr 0.9fr; }
 }
 
 .reveal {
