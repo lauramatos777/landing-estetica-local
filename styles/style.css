@@ -595,6 +595,59 @@ a {
   margin-top: 20px;
 }
 
+.testimonials-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.testimonial {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 76, 92, 0.06);
+  box-shadow: 0 18px 30px rgba(15, 76, 92, 0.06);
+  display: grid;
+  gap: 12px;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  content: '“';
+  position: absolute;
+  left: -8px;
+  top: -12px;
+  font-size: 3.4rem;
+  color: rgba(15, 76, 92, 0.08);
+}
+
+.testimonial__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial__meta strong {
+  display: block;
+  color: var(--petrol);
+}
+
+.testimonial__meta span {
+  color: rgba(31, 41, 51, 0.7);
+  font-size: 0.95rem;
+}
+
+.rating {
+  margin-left: auto;
+  color: #ffb86b;
+  font-weight: 800;
+}
+
 .cta__box {
   grid-template-columns: 1.2fr auto;
   padding: 34px;
