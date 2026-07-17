@@ -18,6 +18,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
     <header class="topbar">
       <div class="container topbar__inner">
         <a class="brand" href="#hero" aria-label="Ir para o topo">
@@ -32,7 +33,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero section" id="hero">
         <div class="container hero__grid reveal">
           <div class="hero__content">
@@ -308,13 +309,13 @@
 
           <form class="cta__form" aria-label="Formulário rápido de contato">
             <label class="visually-hidden" for="cta-name">Nome</label>
-            <input id="cta-name" name="name" type="text" placeholder="Seu nome" />
+            <input id="cta-name" name="name" type="text" placeholder="Seu nome" autocomplete="name" />
 
             <label class="visually-hidden" for="cta-phone">Telefone</label>
-            <input id="cta-phone" name="phone" type="tel" placeholder="(11) 9 9999-9999" />
+            <input id="cta-phone" name="phone" type="tel" inputmode="tel" placeholder="(11) 9 9999-9999" autocomplete="tel" />
 
             <label class="visually-hidden" for="cta-msg">Mensagem</label>
-            <textarea id="cta-msg" name="message" rows="3" placeholder="Quero agendar uma limpeza de pele..."></textarea>
+            <textarea id="cta-msg" name="message" rows="3" placeholder="Quero agendar uma limpeza de pele..." required aria-required="true"></textarea>
 
             <button type="submit" class="button button--primary button--large">Enviar pelo WhatsApp</button>
 
@@ -350,7 +351,7 @@
 
         <div class="footer__contact">
           <strong>Contato</strong>
-          <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">(11) 9 9999-9999</a></p>
+          <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">(11) 9 9999-9999</a></p>
           <p>Email: <a href="mailto:contato@essenza.com.br">contato@essenza.com.br</a></p>
         </div>
 

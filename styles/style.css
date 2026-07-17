@@ -50,6 +50,29 @@ a {
   text-decoration: none;
 }
 
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 10px 14px;
+  background: var(--petrol);
+  color: var(--white);
+  border-radius: 8px;
+  z-index: 9999;
+}
+
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -235,6 +258,12 @@ a {
 a:focus {
   outline: 3px solid rgba(15, 76, 92, 0.12);
   outline-offset: 3px;
+}
+
+/* Prefer focus-visible to reduce noisy outlines */
+.button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .button:hover {
@@ -687,6 +716,12 @@ a:focus {
   background: rgba(255, 255, 255, 0.9);
   font-size: 0.98rem;
   color: var(--graphite);
+}
+
+.cta__form input:focus,
+.cta__form textarea:focus {
+  outline: 3px solid rgba(15, 76, 92, 0.08);
+  outline-offset: 2px;
 }
 
 .cta__form textarea { resize: vertical; }
