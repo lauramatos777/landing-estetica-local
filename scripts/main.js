@@ -25,3 +25,26 @@ const yearElement = document.querySelector('[data-year]');
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
+
+// CTA form: abre WhatsApp com mensagem pré-preenchida
+document.addEventListener('DOMContentLoaded', () => {
+  const ctaForm = document.querySelector('.cta__form');
+  if (!ctaForm) return;
+
+  ctaForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('cta-name').value.trim();
+    const phone = document.getElementById('cta-phone').value.trim();
+    const message = document.getElementById('cta-msg').value.trim();
+
+    let text = 'Olá, gostaria de agendar um atendimento.';
+    if (name) text += `\nNome: ${name}`;
+    if (phone) text += `\nTelefone: ${phone}`;
+    if (message) text += `\nMensagem: ${message}`;
+
+    const number = '5511999999999';
+    const url = `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+});
