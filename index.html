@@ -324,10 +324,49 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="footer-heading">
       <div class="container footer__inner">
-        <p>Essenza Estética & Bem-estar</p>
-        <p>Projeto de portfólio Front-end + UI/UX</p>
+        <div class="footer__brand">
+          <a class="brand" href="#hero" aria-label="Ir para o topo">
+            <span class="brand__mark">E</span>
+            <span>
+              <strong>Essenza</strong>
+              <small>Estética &amp; Bem-estar</small>
+            </span>
+          </a>
+          <p class="footer__desc">Espaço especializado em atendimentos humanizados e resultados naturais.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links principais">
+          <h3 id="footer-heading" class="visually-hidden">Rodapé</h3>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <strong>Contato</strong>
+          <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">(11) 9 9999-9999</a></p>
+          <p>Email: <a href="mailto:contato@essenza.com.br">contato@essenza.com.br</a></p>
+        </div>
+
+        <div class="footer__socials">
+          <strong>Siga-nos</strong>
+          <div class="social-list" aria-label="Redes sociais">
+            <a href="#" aria-label="Instagram" class="social">IG</a>
+            <a href="#" aria-label="Facebook" class="social">FB</a>
+            <a href="#" aria-label="Pinterest" class="social">PT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__legal">
+        <p>&copy; <span data-year></span> Essenza Estética. Todos os direitos reservados.</p>
+        <p>Desenvolvido como projeto de portfólio.</p>
       </div>
     </footer>
   </body>
