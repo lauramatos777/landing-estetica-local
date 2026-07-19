@@ -63,5 +63,3 @@ Projeto de portfólio: landing page estática para um negócio fictício de est�
 Laura Matos — desenvolvedora front-end (projeto de portfólio).
 
 ---
-
-Se precisar, posso gerar uma versão compacta do README em Português formal para apresentação ao cliente.
