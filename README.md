@@ -1,65 +1,81 @@
 # Essenza Estética — Landing Page
 
-Projeto de portfólio: landing page estática para um negócio fictício de estética e bem-estar.
+A modern and responsive landing page for a fictional beauty and wellness business. This project was developed as part of my front-end portfolio to practice building clean, responsive, and user-focused interfaces.
 
-**Objetivo**
+## Live Demo
 
-- Criar uma landing page visualmente elegante, acessível e responsiva que comunique profissionalismo e converta visitantes em contatos.
+> (https://lauramatos777.github.io/landing-estetica-local/)
 
-**Tecnologias**
+## Project Overview
 
-- HTML5
-- CSS3 (vanilla)
-- JavaScript (vanilla)
+The goal of this project was to create a visually appealing, accessible, and responsive landing page that communicates professionalism and encourages visitors to get in touch.
 
-**Funcionalidades implementadas**
+## Technologies
 
-- Hero com CTAs principais
-- Seção Sobre com pilares da marca
-- Seção Serviços com metadados e micro-CTAs
-- Seção Diferenciais com provas e fluxo de atendimento
-- Depoimentos (testimonials)
-- CTA final com formulário rápido que abre WhatsApp com mensagem pré-preenchida
-- Footer moderno com navegação, contato e redes sociais
-- Responsividade e melhorias de acessibilidade básicas
+* HTML5
+* CSS3 (Vanilla CSS)
+* JavaScript (Vanilla JavaScript)
 
-**Estrutura do projeto**
+## Features
 
-- File: [index.html](index.html)
-- File: [styles/style.css](styles/style.css)
-- File: [scripts/main.js](scripts/main.js)
-- Directory: [assets/images](assets/images)
+* Hero section with primary call-to-action buttons
+* About section presenting the brand values
+* Services section with service cards and micro-CTAs
+* Benefits section highlighting the company's strengths
+* Testimonials section
+* Final CTA with a quick contact form that opens WhatsApp with a pre-filled message
+* Modern footer with navigation, contact information, and social media links
+* Responsive layout for desktop, tablet, and mobile devices
+* Basic accessibility improvements
 
-## Como executar localmente
+## Project Structure
 
-1. Abra a pasta do projeto no VS Code.
-2. Certifique-se de que a extensão **Live Server** está instalada.
-3. Clique com o botão direito no arquivo `index.html`.
-4. Selecione **Open with Live Server**.
-5. O projeto será aberto automaticamente no navegador.
+```text
+├── index.html
+├── styles/
+│   └── style.css
+├── scripts/
+│   └── main.js
+└── assets/
+    └── images/
+```
 
-**Validação e testes manuais**
+## Getting Started
 
-- Teste de responsividade em tamanhos: desktop, notebook, tablet, celular.
-- Navegação por teclado (skip link, foco visível).
-- Envio do formulário CTA — abre WhatsApp com mensagem pré-preenchida.
+1. Open the project folder in Visual Studio Code.
+2. Make sure the **Live Server** extension is installed.
+3. Right-click on the `index.html` file.
+4. Select **Open with Live Server**.
+5. The project will automatically open in your browser.
 
-**Aprendizados durante o desenvolvimento**
+## Manual Testing
 
-- Prática de layout responsivo com CSS Grid e Flexbox.
-- Importância da semântica HTML (`figure`, `figcaption`, `main`, `nav`).
-- Acessibilidade básica: skip link, foco visível e atributos `autocomplete`/`inputmode`.
-- Fluxo de commits organizado com Conventional Commits ajuda a contar a história do projeto.
+* Tested on desktop, laptop, tablet, and mobile screen sizes.
+* Keyboard navigation and visible focus states.
+* CTA form opens WhatsApp with a pre-filled message.
+* Verified responsiveness across different viewport sizes.
 
-**Melhorias futuras**
+## What I Learned
 
-- Implementar imagens reais e otimização (compressão, srcset).
-- Testes automatizados de regressão visual e linting (HTML/CSS/JS).
-- Inserir formulários reais com back-end para persistência de leads.
-- Integrar analytics e monitoramento de performance.
+* Building responsive layouts using CSS Grid and Flexbox.
+* Writing semantic HTML with elements such as `main`, `nav`, `figure`, and `figcaption`.
+* Applying basic accessibility practices, including skip links, visible focus states, and proper form attributes.
+* Keeping a clean Git history using Conventional Commits.
 
-**Autor**
+## Future Improvements
 
-Laura Matos — desenvolvedora front-end (projeto de portfólio).
+* Replace placeholder images with optimized real images.
+* Add automated testing and linting.
+* Integrate a real backend for form submissions.
+* Add analytics and performance monitoring.
+* Improve SEO metadata.
+
+## Author
+
+**Laura Matos**
+
+Front-End Developer | Portfolio Project
 
 ---
+
+This project was created for learning purposes and to showcase my front-end development skills.
