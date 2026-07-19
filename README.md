@@ -30,21 +30,13 @@ Projeto de portfólio: landing page estática para um negócio fictício de est�
 - File: [scripts/main.js](scripts/main.js)
 - Directory: [assets/images](assets/images)
 
-**Como executar localmente**
+## Como executar localmente
 
-Opções simples para visualizar o projeto:
-
-- Abrir `index.html` diretamente no navegador (uso rápido).
-- Ou servir via um servidor local (recomendado):
-
-```
-# Python 3
-python -m http.server 8000
-
-# então abra http://localhost:8000
-```
-
-- Se preferir usar uma extensão do editor (por exemplo, Live Server no VS Code), abra a pasta do projeto e inicie o servidor.
+1. Abra a pasta do projeto no VS Code.
+2. Certifique-se de que a extensão **Live Server** está instalada.
+3. Clique com o botão direito no arquivo `index.html`.
+4. Selecione **Open with Live Server**.
+5. O projeto será aberto automaticamente no navegador.
 
 **Validação e testes manuais**
 
